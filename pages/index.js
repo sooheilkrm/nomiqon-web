@@ -1,6 +1,24 @@
+import { getSlogan } from '../lib/getSlogan';
+import { getFooter } from '../lib/getFooter';
+import { getPost } from '../lib/getPost'; // اگه بخش بلاگ فعاله
+export async function getStaticProps() {
+  const slogan = await getSlogan();
+  const footer = await getFooter();
+  const posts = await getPost(); // اگر بلاگ استفاده میشه
+
+  return {
+    props: {
+      slogan,
+      footer,
+      posts,
+    },
+    revalidate: 60, // برای ISR
+  };
+}
+
 import Head from 'next/head'
 
-export default function Home() {
+export default function Home({ slogan, footer, posts }) {
   return (
     <div className="text-gray-800">
       <Head>
@@ -8,6 +26,9 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
+    <h1 className="text-4xl md:text-6xl font-bold mb-4">
+     {slogan?.text || "Build your brand in seconds"}
+</h1>
       <section className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-20 px-4 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Build your brand in seconds</h1>
         <p className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">Create stunning logos and full brand kits with the power of AI. No design skills required.</p>
