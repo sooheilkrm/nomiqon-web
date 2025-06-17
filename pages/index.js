@@ -20,10 +20,6 @@ import Head from 'next/head'
 
 export default function Home({ slogan, footer, posts }) {
   return (
-    <div className="text-gray-800">
-      <Head>
-        <title>Nomiqon - Build your brand in seconds</title>
-      </Head>
 
       {/* Hero Section */}
     <h1 className="text-4xl md:text-6xl font-bold mb-4">
