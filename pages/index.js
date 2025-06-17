@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { getSlogan } from '../lib/getSlogan';
 import { getFooter } from '../lib/getFooter';
 import { getPost } from '../lib/getPost'; // اگه بخش بلاگ فعاله
@@ -21,7 +22,6 @@ return (
   </>
 );
 
-import Head from 'next/head'
 
 export default function Home({ slogan, footer, posts }) {
   return (
