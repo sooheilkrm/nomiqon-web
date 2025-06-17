@@ -6,15 +6,20 @@ export async function getStaticProps() {
   const footer = await getFooter();
   const posts = await getPost(); // اگر بلاگ استفاده میشه
 
-  return {
-    props: {
-      slogan,
-      footer,
-      posts,
-    },
-    revalidate: 60, // برای ISR
-  };
-}
+return (
+  <>
+    {/* Hero Section */}
+    <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      {slogan?.text || "Build your brand in seconds"}
+    </h1>
+
+    <section className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-20 px-4 text-center">
+      <p className="text-lg">
+        Welcome to Nomiqon. Your brand journey starts here.
+      </p>
+    </section>
+  </>
+);
 
 import Head from 'next/head'
 
