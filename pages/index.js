@@ -1,35 +1,20 @@
 import Head from 'next/head'
 import { getSlogan } from '../lib/getSlogan';
 import { getFooter } from '../lib/getFooter';
-import { getPost } from '../lib/getPost'; // اگه بخش بلاگ فعاله
-export async function getStaticProps() {
-  const slogan = await getSlogan();
-  const footer = await getFooter();
-  const posts = await getPost(); // اگر بلاگ استفاده میشه
-
-return (
-  <>
-    {/* Hero Section */}
-    <h1 className="text-4xl md:text-6xl font-bold mb-4">
-      {slogan?.text || "Build your brand in seconds"}
-    </h1>
-
-    <section className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-20 px-4 text-center">
-      <p className="text-lg">
-        Welcome to Nomiqon. Your brand journey starts here.
-      </p>
-    </section>
-  </>
-);
-
+import { getPost } from '../lib/getPost';
 
 export default function Home({ slogan, footer, posts }) {
   return (
+    <>
+      <Head>
+        <title>Nomiqon</title>
+      </Head>
 
       {/* Hero Section */}
-    <h1 className="text-4xl md:text-6xl font-bold mb-4">
-     {slogan?.text || "Build your brand in seconds"}
-</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        {slogan?.text || "Build your brand in seconds"}
+      </h1>
+
       <section className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-20 px-4 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Build your brand in seconds</h1>
         <p className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">Create stunning logos and full brand kits with the power of AI. No design skills required.</p>
@@ -42,7 +27,7 @@ export default function Home({ slogan, footer, posts }) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
           {['Describe your business', 'Choose your style', 'Preview your brand', 'Download and use'].map((step, idx) => (
             <div key={idx} className="flex flex-col items-center text-center">
-              <div className="h-12 w-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold mb-4">{idx+1}</div>
+              <div className="h-12 w-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold mb-4">{idx + 1}</div>
               <h3 className="font-semibold mb-2">{step}</h3>
               <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -60,7 +45,7 @@ export default function Home({ slogan, footer, posts }) {
             { title: 'Instant Previews', desc: 'See your brand on real mockups instantly.' }
           ].map((feat, idx) => (
             <div key={idx} className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="h-12 w-12 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold mb-4">{idx+1}</div>
+              <div className="h-12 w-12 mx-auto bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center font-bold mb-4">{idx + 1}</div>
               <h3 className="font-semibold mb-2">{feat.title}</h3>
               <p className="text-sm text-gray-500">{feat.desc}</p>
             </div>
@@ -72,7 +57,7 @@ export default function Home({ slogan, footer, posts }) {
       <section className="py-16 px-4 bg-white">
         <h2 className="text-3xl font-bold text-center mb-12">Brand previews</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[1,2,3,4,5,6].map(num => (
+          {[1, 2, 3, 4, 5, 6].map(num => (
             <div key={num} className="h-40 bg-gray-200 rounded-lg" />
           ))}
         </div>
@@ -100,6 +85,20 @@ export default function Home({ slogan, footer, posts }) {
         </div>
         <p className="text-center mt-8">&copy; {new Date().getFullYear()} Nomiqon. All rights reserved.</p>
       </footer>
-    </div>
-  )
+    </>
+  );
+}
+
+export async function getStaticProps() {
+  const slogan = await getSlogan();
+  const footer = await getFooter();
+  const posts = await getPost();
+
+  return {
+    props: {
+      slogan,
+      footer,
+      posts,
+    },
+  };
 }
