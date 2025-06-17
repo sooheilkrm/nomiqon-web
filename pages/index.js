@@ -11,14 +11,16 @@ export default function Home({ slogan, footer, posts }) {
       </Head>
 
       {/* Hero Section */}
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">
-        {slogan?.text || "Build your brand in seconds"}
-      </h1>
-
       <section className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-20 px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Build your brand in seconds</h1>
-        <p className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">Create stunning logos and full brand kits with the power of AI. No design skills required.</p>
-        <button className="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-md hover:bg-gray-100 transition">Get Started</button>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          {slogan?.text || "Build your brand in seconds"}
+        </h1>
+        <p className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">
+          Create stunning logos and full brand kits with the power of AI. No design skills required.
+        </p>
+        <button className="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
+          Get Started
+        </button>
       </section>
 
       {/* How It Works */}
@@ -66,13 +68,17 @@ export default function Home({ slogan, footer, posts }) {
       {/* Testimonials */}
       <section className="py-16 px-4 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-12">What people are saying</h2>
-        <div className="max-w-3xl mx-auto text-center text-gray-600 italic">"This platform made branding effortless and fun!"</div>
+        <div className="max-w-3xl mx-auto text-center text-gray-600 italic">
+          "This platform made branding effortless and fun!"
+        </div>
       </section>
 
       {/* Call to Action */}
       <section className="py-16 px-4 bg-indigo-600 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to build your brand?</h2>
-        <button className="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-md hover:bg-gray-100 transition">Try it now</button>
+        <button className="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-full shadow-md hover:bg-gray-100 transition">
+          Try it now
+        </button>
       </section>
 
       {/* Footer */}
@@ -83,7 +89,9 @@ export default function Home({ slogan, footer, posts }) {
           <a href="#" className="hover:text-white">Contact</a>
           <a href="#" className="hover:text-white">Privacy</a>
         </div>
-        <p className="text-center mt-8">&copy; {new Date().getFullYear()} Nomiqon. All rights reserved.</p>
+        <p className="text-center mt-8">
+          &copy; {new Date().getFullYear()} Nomiqon. All rights reserved.
+        </p>
       </footer>
     </>
   );
