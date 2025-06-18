@@ -4,6 +4,7 @@ import { getFooter } from '../lib/getFooter';
 import { getPost } from '../lib/getPost';
 
 export default function Home({ slogan, footer, posts }) {
+    console.log("✅ Slogan from CMS:", slogan);
   return (
     <>
       <Head>
