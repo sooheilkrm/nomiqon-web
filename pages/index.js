@@ -102,7 +102,9 @@ export async function getStaticProps() {
   const slogan = await getSlogan();
   const footer = await getFooter();
   const posts = await getPost();
-
+    
+   console.log("📢 SLOGAN FROM CMS:", slogan);
+    
   return {
     props: {
       slogan,
