@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/studio/(.*)",
+      "destination": "https://nomiqon-cms.vercel.app/studio/$1"
+    }
+  ]
+}
