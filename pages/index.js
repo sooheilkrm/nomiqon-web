@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import HeroSection from '../components/HeroSection'
+import HowItWorks from '../components/HowItWorks'
+import FormSection from '../components/FormSection'
+import Footer from '../components/Footer'
 import { getSlogan } from '../lib/getSlogan';
 import { getFooter } from '../lib/getFooter';
 import { getPost } from '../lib/getPost';
