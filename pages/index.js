@@ -1,4 +1,9 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import HeroSection from '../components/HeroSection'
+import HowItWorks from '../components/HowItWorks'
+import BlogPreview from '../components/BlogPreview'
+import FormSection from '../components/FormSection'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -6,9 +11,11 @@ export default function Home() {
       <Head>
         <title>Nomiqon</title>
       </Head>
-      <div className="text-center py-10 text-2xl font-semibold">
-        👋 Site is under redesign...
-      </div>
+      <HeroSection />
+      <HowItWorks />
+      <BlogPreview />
+      <FormSection />
+      <Footer />
     </>
-  );
+  )
 }
