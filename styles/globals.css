@@ -1,8 +1,11 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #0e0e10;
-  color: white;
-  font-family: 'Inter', sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Nomiqon';
+  src: url('/fonts/Nomiqon.ttf') format('truetype');
+}
+.font-nomiqon {
+  font-family: 'Nomiqon', sans-serif;
 }

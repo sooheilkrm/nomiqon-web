@@ -1,8 +1,7 @@
 export default function Contact() {
   return (
-    <div style={{ padding: '4rem 2rem', fontFamily: 'Inter, sans-serif' }}>
-      <h1>Contact Us</h1>
-      <p>Reach out to our team at contact@nomiqon.com</p>
+    <div className="min-h-screen bg-black text-white flex items-center justify-center font-nomiqon">
+      <h1 className="text-3xl">Contact Us</h1>
     </div>
-  )
+  );
 }

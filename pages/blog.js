@@ -1,8 +1,7 @@
 export default function Blog() {
   return (
-    <div style={{ padding: '4rem 2rem', fontFamily: 'Inter, sans-serif' }}>
-      <h1>Blog</h1>
-      <p>Read about the future of branding and design with AI.</p>
+    <div className="min-h-screen bg-black text-white flex items-center justify-center font-nomiqon">
+      <h1 className="text-3xl">Welcome to our Blog</h1>
     </div>
-  )
+  );
 }

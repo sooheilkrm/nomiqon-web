@@ -1,5 +1,5 @@
 {
-  "name": "nomiqon-linear-style",
+  "name": "nomiqon-linear",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -10,5 +10,10 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.24"
   }
 }
