@@ -1,9 +1,21 @@
 
+import Head from 'next/head'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Features from '../components/Features'
+import Footer from '../components/Footer'
+
 export default function Home() {
   return (
-    <div style={{ textAlign: "center", padding: "50px" }}>
-      <h1>Welcome to Nomiqon</h1>
-      <p>This is the cleaned version with index.js</p>
-    </div>
-  );
+    <>
+      <Head>
+        <title>Nomiqon</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Footer />
+    </>
+  )
 }
