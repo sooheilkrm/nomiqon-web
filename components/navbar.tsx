@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2" aria-label="Nomiqon Homepage">
-            <img src="logo.svg" alt="Nomiqon Logo" class="logo">
+            <span className="font-bold text-lg">Nomiqon</span>
           </Link>
         </div>
 
