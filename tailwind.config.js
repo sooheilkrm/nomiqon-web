@@ -1,16 +1,17 @@
+
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
-        brand: {
-          light: '#4fd1c5',
-          DEFAULT: '#319795',
-          dark: '#285e61',
+        teal: {
+          100: "#CCFBF1",
+          600: "#0d9488",
+          700: "#0f766e"
         }
-      },
-      fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui'],
       }
     },
   },
