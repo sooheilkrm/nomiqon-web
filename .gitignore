@@ -1,7 +1,0 @@
-# dependencies
-node_modules/
-# build output
-.next/
-# optional lockfile
-yarn.lock
-package-lock.json
