@@ -1,13 +1,17 @@
 module.exports = {
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
+  content: ["./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#14b8a6',
-          dark: '#0f766e',
-        },
+        brand: {
+          light: '#4fd1c5',
+          DEFAULT: '#319795',
+          dark: '#285e61',
+        }
       },
+      fontFamily: {
+        sans: ['ui-sans-serif', 'system-ui'],
+      }
     },
   },
   plugins: [],
