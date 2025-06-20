@@ -1,1 +1,0 @@
-export default function Blog() { return <div className='p-10'>Nomiqon Blog</div>; }
