@@ -44,6 +44,7 @@ export default function Home({ slogan, footer, posts }) {
       <Head>
         <title>Nomiqon</title>
       </Head>
+
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">{slogan?.text}</h1>
