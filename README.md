@@ -1,3 +1,3 @@
-# Nomiqon Web
+# Nomiqon Linear Clone
 
-This is a Codex-ready starter project for building the Nomiqon website using Next.js and Tailwind CSS.
+This is a simple homepage inspired by linear.app built with Next.js and Tailwind CSS.
