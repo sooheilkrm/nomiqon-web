@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Nomiqon';
-  src: url('/fonts/Nomiqon.ttf') format('truetype');
-}
-.font-nomiqon {
-  font-family: 'Nomiqon', sans-serif;
-}
