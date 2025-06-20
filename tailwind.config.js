@@ -1,18 +1,14 @@
-
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        teal: {
-          100: "#CCFBF1",
-          600: "#0d9488",
-          700: "#0f766e"
-        }
-      }
+        brand: {
+          DEFAULT: '#14b8a6',
+          light: '#2dd4bf',
+          dark: '#0f766e',
+        },
+      },
     },
   },
   plugins: [],

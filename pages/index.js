@@ -1,23 +1,11 @@
-
-import Head from 'next/head';
-import Image from 'next/image';
-import Logo from '../public/logo.svg';
-
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Nomiqon</title>
-        <meta name="description" content="Your Brand. One Click Away." />
-      </Head>
-      <div className="min-h-screen bg-gradient-to-b from-teal-100 to-white flex flex-col items-center justify-center text-center px-4">
-        <Image src={Logo} alt="Logo" width={80} height={80} className="mb-6" />
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Nomiqon</h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-8">Your brand. One click away.</p>
-        <button className="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-xl transition-all">
-          Get Started
-        </button>
-      </div>
-    </>
-  );
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-brand to-brand-light p-10">
+      <img src="/logo.svg" alt="Nomiqon Logo" className="w-32 h-32 mb-8" />
+      <h1 className="text-white text-4xl font-bold">Your Brand. One Click Away.</h1>
+      <p className="text-white text-lg mt-4 text-center max-w-xl">
+        Welcome to Nomiqon — a futuristic platform for instant brand creation powered by AI and design.
+      </p>
+    </main>
+  )
 }
