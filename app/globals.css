@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* === Custom CSS Variables === */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -64,13 +65,59 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
   }
-}
 
-@layer base {
   * {
-    border-color: hsl(var(--border)); /* ✅ اصلاح شده */
+    border-color: hsl(var(--border));
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* === Custom Utility Classes for Tailwind to Recognize === */
+@layer utilities {
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+
+  .text-foreground {
+    color: hsl(var(--foreground));
+  }
+
+  .border-border {
+    border-color: hsl(var(--border));
+  }
+
+  .bg-card {
+    background-color: hsl(var(--card));
+  }
+
+  .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .bg-popover {
+    background-color: hsl(var(--popover));
+  }
+
+  .text-popover-foreground {
+    color: hsl(var(--popover-foreground));
+  }
+
+  .bg-primary {
+    background-color: hsl(var(--primary));
+  }
+
+  .text-primary-foreground {
+    color: hsl(var(--primary-foreground));
+  }
+
+  .bg-secondary {
+    background-color: hsl(var(--secondary));
+  }
+
+  .text-secondary-foreground {
+    color: hsl(var(--secondary-foreground));
   }
 }
