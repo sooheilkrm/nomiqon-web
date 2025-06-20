@@ -1,17 +1,39 @@
-import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-8 text-sm">
-      <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <a href="#" className="hover:text-white">About</a>
-        <a href="#" className="hover:text-white">Blog</a>
-        <a href="#" className="hover:text-white">Contact</a>
-        <a href="#" className="hover:text-white">Privacy</a>
+    <footer className="bg-black text-white py-12 px-8 grid grid-cols-2 md:grid-cols-5 gap-6">
+      <div>
+        <h4 className="font-bold text-lg mb-4">Nomiqon</h4>
       </div>
-      <p className="text-center mt-8">
-        &copy; {new Date().getFullYear()} Nomiqon. All rights reserved.
-      </p>
+      <div>
+        <h5 className="font-semibold mb-2">Connect</h5>
+        <ul>
+          <li>Contact Us</li>
+          <li>Instagram</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+      <div>
+        <h5 className="font-semibold mb-2">Company</h5>
+        <ul>
+          <li>About</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div>
+        <h5 className="font-semibold mb-2">Support</h5>
+        <ul>
+          <li>Help Center</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div>
+        <h5 className="font-semibold mb-2">Resources</h5>
+        <ul>
+          <li>Docs</li>
+          <li>Community</li>
+        </ul>
+      </div>
     </footer>
-  );
+  )
 }
