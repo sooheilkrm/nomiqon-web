@@ -1,3 +1,2 @@
-# Nomiqon Web
-
-This is a Codex-ready starter project for building the Nomiqon website using Next.js and Tailwind CSS.
+# Nomiqon - Pages Router Version
+Simple Next.js app using pages/index.js and Tailwind CSS.
