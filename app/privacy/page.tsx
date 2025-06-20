@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Enterprise AI Platform",
+  title: "Privacy Policy | Nomiqon Platform",
   description: "Our commitment to protecting your privacy and securing your data.",
 }
 
@@ -36,10 +36,10 @@ export default function PrivacyPolicy() {
             </div>
 
             <PrivacyPolicyTemplate
-              companyName="AI Enterprise"
-              websiteUrl="https://aienterprise.com"
-              contactEmail="privacy@aienterprise.com"
-              contactAddress={`AI Enterprise, Inc.\n123 AI Boulevard\nTech City, CA 94000\nUnited States`}
+              companyName="NOMIQON"
+              websiteUrl="https://nomiqon.com"
+              contactEmail="info@nomiqon.com"
+              contactAddress={`NOMIQON, Inc.\n123 AI Boulevard\nTech City, NR 94000\Germany`}
               lastUpdated={currentDate}
               includeGDPR={true}
               includeCCPA={true}
