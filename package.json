@@ -1,6 +1,16 @@
-{"name": "nomiqon-landing", "dependencies": {"next": "13.5.11", "react": "^18.2.0", "react-dom": "^18.2.0", "tailwindcss": "^3.3.2"}}
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
+{
+  "name": "nomiqon-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "13.5.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.4.1"
+  }
 }
