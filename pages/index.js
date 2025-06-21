@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
@@ -11,7 +12,11 @@ export default function Home() {
     </div>
   )
 }
-    
+    function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
     <>
       <Head>
         <title>Nomiqon</title>
