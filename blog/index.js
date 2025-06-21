@@ -1,9 +1,3 @@
-
-export default function BlogPage() {
-  return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">Nomiqon Blog</h1>
-      <p className="mt-4">Latest updates, branding tips, and insights.</p>
-    </div>
-  );
+export default function Blog() {
+  return <div className="p-10 text-center">Blog Home</div>;
 }
