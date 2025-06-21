@@ -1,1 +1,1 @@
-export default function Hero() { return <section>Hero Section</section>; }
+export default function Hero() { return <section><h1>Your Brand. One Click Away.</h1><p>Nomiqon helps you launch powerful brand identities in seconds.</p></section>; }
