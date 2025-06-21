@@ -6,6 +6,12 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
+    <div className="text-3xl font-bold text-center mt-20 text-teal-600">
+      Welcome to Nomiqon
+    </div>
+  )
+}
+    
     <>
       <Head>
         <title>Nomiqon</title>
