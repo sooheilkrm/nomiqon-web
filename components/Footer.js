@@ -1,17 +1,12 @@
-import React from 'react';
-
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-8 text-sm">
-      <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <a href="#" className="hover:text-white">About</a>
-        <a href="#" className="hover:text-white">Blog</a>
-        <a href="#" className="hover:text-white">Contact</a>
-        <a href="#" className="hover:text-white">Privacy</a>
+    <footer className="bg-white border-t border-gray-200 py-6 text-center text-sm text-gray-500">
+      <p>© 2025 Nomiqon. All rights reserved.</p>
+      <div className="mt-2 space-x-4">
+        <a href="#" className="hover:underline">Instagram</a>
+        <a href="#" className="hover:underline">Twitter</a>
+        <a href="#" className="hover:underline">Facebook</a>
       </div>
-      <p className="text-center mt-8">
-        &copy; {new Date().getFullYear()} Nomiqon. All rights reserved.
-      </p>
     </footer>
   );
 }
